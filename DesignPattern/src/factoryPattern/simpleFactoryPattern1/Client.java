@@ -9,6 +9,10 @@ public class Client {
 	}
 }
 
+/**
+ * 将具体产品类的公共代码和都需要实现的方法，抽象、提取后封装在抽象产品类中
+ * @author wuwenqi
+ */
 abstract class Product {
 	// 所有产品类的公共业务方法
 	public void methodSame() {
@@ -19,6 +23,10 @@ abstract class Product {
 	public abstract void methodDiff();
 }
 
+/**
+ * 将不同Chart对象封装到不同的类中，这些类称为具体产品类
+ * @author wuwenqi
+ */
 class ConcreteProduct extends Product {
 	// 实现业务方法
 	public void methodDiff() {
@@ -40,8 +48,17 @@ class ConcreteProductB extends Product {
 	}
 }
 
+/**
+ * 工厂类是简单工厂模式的核心，内含静态方法，该方法可以根据传入参数的不同返回不同产品的对象
+ * 该对象是具体产品对象的上转型对象
+ * @author wuwenqi
+ */
 class Factory {
-	// 静态工厂方法
+	/**
+	 * 静态工厂方法
+	 * @param arg
+	 * @return Product
+	 */
 	public static Product getProduct(String arg) {
 		Product product = null;
 		if (arg.equalsIgnoreCase("A")) {

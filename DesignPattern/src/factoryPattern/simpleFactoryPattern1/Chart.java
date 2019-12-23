@@ -2,6 +2,7 @@ package factoryPattern.simpleFactoryPattern1;
 
 /**
  * 开发一套图表库
+ * 图表库的初始设计方案
  * @author wuwenqi
  */
 public class Chart {

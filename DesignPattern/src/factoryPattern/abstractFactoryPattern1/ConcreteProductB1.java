@@ -1,4 +1,4 @@
-package factoryPattern.AbstractFactoryPattern1;
+package factoryPattern.abstractFactoryPattern1;
 
 public class ConcreteProductB1 implements AbstractProductB {
 

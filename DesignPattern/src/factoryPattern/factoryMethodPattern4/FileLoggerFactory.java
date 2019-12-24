@@ -4,7 +4,7 @@ package factoryPattern.factoryMethodPattern4;
  * 文件日志记录器工厂类：具体工厂
  * @author wuwenqi
  */
-public class FileLoggerFactory implements LoggerFactory {
+public class FileLoggerFactory extends LoggerFactory {
 
 	@Override
 	public Logger createLogger() {

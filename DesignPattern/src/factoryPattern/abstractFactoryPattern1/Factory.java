@@ -1,4 +1,4 @@
-package factoryPattern.AbstractFactoryPattern1;
+package factoryPattern.abstractFactoryPattern1;
 
 public interface Factory {
 	

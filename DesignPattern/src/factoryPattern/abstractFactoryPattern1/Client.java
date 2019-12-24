@@ -1,4 +1,4 @@
-package factoryPattern.AbstractFactoryPattern1;
+package factoryPattern.abstractFactoryPattern1;
 
 // 客户端测试代码
 public class Client {

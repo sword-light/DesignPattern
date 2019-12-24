@@ -1,19 +1,19 @@
-package factoryPattern.factoryMethodPattern4;
+package factoryPattern.abstractFactoryPattern2;
 
-// 工具类XMLUtil.java
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import java.io.*;
 
+// 工具类XMLUtil.java
 public class XMLUtil {
 	// 该方法用于从XML配置文件中提取具体类类名，并返回一个实例对象
 	public static Object getBean() {
 		try {
-			// 创建DOM文档对象
+			// 创建文档对象
 			DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = dFactory.newDocumentBuilder();
 			Document doc;
-			doc = builder.parse(new File("src/factoryPattern/factoryMethodPattern4/config.xml"));
+			doc = builder.parse(new File("src/factoryPattern/abstractFactoryPattern2/config.xml"));
 
 			// 获取包含类名的文本节点
 			NodeList nl = doc.getElementsByTagName("className");

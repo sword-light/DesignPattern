@@ -5,10 +5,8 @@ public class Client {
 	
 	public static void main(String args[]) {
 		LoggerFactory factory;
-		Logger logger;
-		factory = (LoggerFactory) XMLUtil.getBean(); // getBean()的返回类型为Object
-		logger = factory.createLogger();
-		logger.writeLog();
+		factory = (LoggerFactory) XMLUtil.getBean();
+		factory.writeLog(); // 直接使用工厂对象来调用产品对象的业务方法
 	}
 	
 	// java-reflect

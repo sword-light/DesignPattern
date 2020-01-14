@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * 工作周报
- *  深克隆
+ * 深克隆
  * @author wuwenqi
  */
 public class WeeklyLog implements Serializable {
